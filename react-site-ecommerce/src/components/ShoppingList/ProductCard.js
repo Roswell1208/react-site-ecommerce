@@ -3,17 +3,20 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 
-// Context
-// import { DetailsContext } from '../DetailsContext';
+// Styles
+import "../../styles/productCard.css"
 
 
 const ProductCard = ({ product }) => {
     return (
         <div>
             <Card>
-                <CardContent>
-                    <Typography variant="h5">{product.name}</Typography>
-                </CardContent>
+                <div className='card'>
+                    <CardContent>
+                        <Typography variant="h6">{product.title}</Typography>
+                        <img src={product.image} alt={product.id} />
+                    </CardContent>
+                </div>
             </Card>
         </div>
     );

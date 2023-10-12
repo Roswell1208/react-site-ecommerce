@@ -1,0 +1,49 @@
+.removeButton {
+    background-color: red;
+    color: white;
+    padding: 5px;
+}
+
+.removeButton img {
+    width: 20px;
+    height: auto;
+}
+
+button {
+    border-radius: 0.5em;
+}
+
+.cartTable table, th, tr, td {
+    border: 1px solid black;
+}
+
+.cartTable {
+    margin: 50px;
+}
+
+.cartTitle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.quantityField {
+    width: 150px;
+}
+
+
+.noProducts {
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 750px) {
+    .description {
+        display: none;
+    }
+
+    .cartTable {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

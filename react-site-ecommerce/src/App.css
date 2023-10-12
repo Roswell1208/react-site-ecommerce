@@ -38,7 +38,17 @@
 }
 
 
+.logoHome img {
+  width: 20px;
+  height: auto;
+}
+
+
 .logoCart img {
   width: 20px;
   height: auto;
+}
+
+.logoCart {
+  display: inline;
 }

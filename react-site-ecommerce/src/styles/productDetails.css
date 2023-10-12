@@ -1,3 +1,24 @@
 .detailsProduct {
     margin-bottom: 50px;
 }
+
+.detailsProduct img {
+    width: auto;
+    height: 200px;
+}
+
+
+.addToCart button {
+    margin: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 0.5em;
+    padding: 10px;
+}
+
+.closeDetails button {
+    background-color: red;
+    color: white;
+    border-radius: 0.5em;
+    padding: 5px;
+}
