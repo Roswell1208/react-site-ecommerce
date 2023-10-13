@@ -1,0 +1,41 @@
+.detailsProduct {
+    margin-bottom: 50px;
+}
+
+.detailsProduct img {
+    width: auto;
+    height: 250px;
+    margin: 20px;
+}
+
+
+.addToCart button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 0.5em;
+    margin: 10px;
+}
+
+.addToCart button:hover {
+    background-color: #45a049;
+}
+
+
+.closeDetails button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 0.5em;
+    margin: 10px;
+}
+
+.closeDetails button:hover {
+    background-color: rgb(200, 0, 0);
+}
