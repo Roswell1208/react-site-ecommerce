@@ -55,13 +55,14 @@ const ShoppingList = () => {
                 {isDetailsVisible && (
                     <div className="ProductDetails"><ProductDetails product={productDetails} /></div>
                 )}
+
+                <h1 className='mainTitle'>Welcome to Computer Shop!</h1>
                 
                 <div className="Products">
                     <Grid container spacing={2}>
                         {productsData.map((product) => (
                             <Grid item xs={12} sm={6} md={4} lg={3} key={product.id}>
-                                <ProductCard product={product} />
-                                <button onClick={() => toggleDetails(product)}>Details</button>
+                                <ProductCard product={product} onProductClick={toggleDetails} />
                             </Grid>
                         ))}
                     </Grid>

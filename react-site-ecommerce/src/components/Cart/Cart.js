@@ -70,9 +70,10 @@ const Cart = () => {
                 <table className="cartTable">
                     <thead>
                         <tr>
+                            <th className='image'>Image</th>
                             <th>Title</th>
                             <th className='description'>Description</th>
-                            <th>Unit price</th>
+                            <th className='unitPrice'>Unit price</th>
                             <th>Quantity</th>
                             <th></th>
                         </tr>
@@ -80,9 +81,10 @@ const Cart = () => {
                     <tbody>
                         {Object.values(cart).map(product => (
                             <tr key={product.id}>
+                                <td className='image'><img src={product.image} alt={product.id} /></td>
                                 <td>{product.title}</td>
                                 <td className='description'>{product.description}</td>
-                                <td>{product.price} $</td>
+                                <td className='unitPrice'>{product.price} $</td>
                                 <td className='quantityField'>
                                     <button onClick={() => decrementQuantity(product.id)}>-</button> {product.quantity} <button onClick={() => incrementQuantity(product.id)}>+</button>
                                 </td>

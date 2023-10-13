@@ -43,7 +43,7 @@ function App() {
             <Navbar bg='dark' variant='dark'>
               <Container>
 
-                <Navbar.Brand href='/'>Shopping List</Navbar.Brand>
+                <Navbar.Brand href='/'>Computer Shop</Navbar.Brand>
 
                 <Nav className='me-auto'>
                   <div className='logoHome'>

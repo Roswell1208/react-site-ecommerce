@@ -7,9 +7,9 @@ import Typography from '@mui/material/Typography';
 import "../../styles/productCard.css"
 
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, onProductClick }) => {
     return (
-        <div>
+        <div onClick={() => onProductClick(product)}>
             <Card>
                 <div className='card'>
                     <CardContent>

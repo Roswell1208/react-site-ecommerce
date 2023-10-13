@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
+import Swal from 'sweetalert';
 
 // Styles
 import "../../styles/productDetails.css"
@@ -37,7 +38,9 @@ const ProductDetails = (props) => {
         localStorage.setItem('cart', JSON.stringify(existingCart));
         setCartQuantity(cartQuantity + 1);
 
-        alert("Product added to cart!")
+        Swal("The product has been added to your cart!", {
+            icon: "success",
+          });
     }
 
 
@@ -52,7 +55,7 @@ const ProductDetails = (props) => {
                     <Typography variant="h5">{product.title}</Typography>
                     <img src={product.image} alt={product.id} />
                     <Typography variant="body2">{product.description}</Typography>
-                    <Typography variant="body2">{product.price} $</Typography>
+                    <Typography variant="body2"><strong>Price: {product.price} $</strong></Typography>
                     <div className='addToCart'>
                         <button onClick={() => addToCart()}>Add to cart</button>
                     </div>
